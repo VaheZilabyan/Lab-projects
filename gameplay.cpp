@@ -3,10 +3,11 @@
 
 GamePlay::GamePlay()
 {
-
 }
 
-void GamePlay::GameStart() { std::cout << "CHESS\n"; }
+void GamePlay::GameStart() {
+    board->getBoard();
+}
 void GamePlay::ControlBeatPiece() {}
-Player GamePlay::Winner() {}
+Player GamePlay::Winner() {Player p; return p;}
 void GamePlay::GameEnd() {}

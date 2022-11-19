@@ -12,7 +12,7 @@ public:
     Player Winner();
     void GameEnd();
 private:
-    ChessBoard board;
+    ChessBoard *board = board->GetInstance();
     Player player;
 };
 
