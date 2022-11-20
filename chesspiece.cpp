@@ -1,13 +1,8 @@
 #include "chesspiece.h"
 
-ChessPiece::ChessPiece()
-{
-
+char Rook::getSymbol() {
+    return symbol;
 }
-
-void ChessPiece::Beat() {}
-bool ChessPiece::CheckMove() {return true;}
-void ChessPiece::Move() {}
 
 char Knight::getSymbol() {
     return symbol;

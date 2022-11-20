@@ -1,24 +1,15 @@
 #ifndef CHESSPIECE_H
 #define CHESSPIECE_H
 
-class ChessPiece
+class Rook
 {
 public:
-    ChessPiece();
-    virtual void Beat();
-    virtual bool CheckMove();
-    virtual void Move();
-};
-
-class Rook : public ChessPiece
-{
-public:
-    void getSymbol();
+    char getSymbol();
 private:
     char symbol = 'R';
 };
 
-class Bishop : public ChessPiece
+class Bishop
 {
 public:
     char getSymbol();
@@ -26,7 +17,7 @@ private:
     char symbol = 'B';
 };
 
-class Knight : public ChessPiece
+class Knight
 {
 public:
     char getSymbol();
@@ -34,7 +25,7 @@ private:
     char symbol = 'N';
 };
 
-class King : public ChessPiece
+class King
 {
 public:
     char getSymbol();
@@ -42,7 +33,7 @@ private:
     char symbol = 'K';
 };
 
-class Pawn : public ChessPiece
+class Pawn
 {
 public:
     char getSymbol();
@@ -50,7 +41,7 @@ private:
     char symbol = 'P';
 };
 
-class Queen: public ChessPiece
+class Queen
 {
 public:
     char getSymbol();
